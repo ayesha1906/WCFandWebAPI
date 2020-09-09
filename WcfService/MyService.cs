@@ -30,9 +30,10 @@ namespace WcfService
             return "Hello Ms." + name;
         }
 
-        public string GetResult(int Sid, string Sname, int M1, int M2, int M3)
+       // public string GetResult(int Sid, string Sname, int M1, int M2, int M3)
+        public string GetResult(Student S)
         {
-            double Avg = (M1 + M2 + M3) / 3.0;
+            double Avg = (S.M1 + S.M2 + S.M3) / 3.0;
             if (Avg < 35)
                 return "Fail";
             else
