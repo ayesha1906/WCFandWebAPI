@@ -12,5 +12,17 @@ namespace WcfService
     {
         [OperationContract]
         string GetData();
+
+        [OperationContract]
+        string GetMessage(string name);
+
+        [OperationContract]
+        string GetResult(int Sid, string Sname, int M1, int M2, int M3);
+
+        [OperationContract]
+        int GetMax(int[] ar);
+
+        [OperationContract]
+        int[] GetSorted(int[] ar);
     }
 }
